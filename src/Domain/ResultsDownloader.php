@@ -4,5 +4,6 @@ namespace Avltree\Scraper\Domain;
 
 interface ResultsDownloader
 {
-    public function readHtml(): string;
+    // TODO consider using collection of VOs
+    public function readHtml(): array;
 }

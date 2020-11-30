@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Tests\Unit\Domain\Results;
+namespace Tests\Unit\Domain;
 
 use Avltree\Scraper\Domain\Exception\Results\InvalidName;
-use Avltree\Scraper\Domain\Results\Name;
+use Avltree\Scraper\Domain\Name;
 use PHPUnit\Framework\TestCase;
 
 class NameTest extends TestCase

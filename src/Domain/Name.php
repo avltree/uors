@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Avltree\Scraper\Domain\Results;
+namespace Avltree\Scraper\Domain;
 
 use Avltree\Scraper\Domain\Exception\Results\InvalidName;
 

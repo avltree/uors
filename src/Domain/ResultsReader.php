@@ -16,6 +16,7 @@ class ResultsReader
     // TODO consider returning a collection
     public function read(): array
     {
-        return $this->parser->parse($this->downloader->readHtml());
+        // TODO should use VOs instead of strings
+        return array_map(fn (string $html): array => $this->parser->parse($html), $this->downloader->readHtml());
     }
 }

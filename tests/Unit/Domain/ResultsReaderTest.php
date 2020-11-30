@@ -26,7 +26,7 @@ class ResultsReaderTest extends TestCase
     public function shouldReadResults(): void
     {
         $this->downloader->method('readHtml')
-            ->willReturn('<div>Dummy HTML</div>');
+            ->willReturn(['<div>Dummy HTML</div>']);
         $this->parser->method('parse')
             ->willReturn(
                 [
